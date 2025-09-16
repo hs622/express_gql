@@ -1,0 +1,35 @@
+{
+  "name": "express_gql",
+  "version": "1.0.0",
+  "description": "basic graphql server with node(typescript) with less dependency as much as possible.",
+  "keywords": [
+    "express",
+    "graphql",
+    "mongodb",
+    "mongoose",
+    "redis"
+  ],
+  "license": "ISC",
+  "author": "Hussain Ali",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc-watch --onSuccess \"npm start\""
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.5.0",
+    "dotenv": "^17.2.2",
+    "tsc-watch": "^7.1.1",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@apollo/server": "^5.0.0",
+    "@as-integrations/express5": "^1.1.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "graphql": "^16.11.0"
+  }
+}
